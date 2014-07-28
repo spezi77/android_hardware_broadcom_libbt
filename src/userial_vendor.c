@@ -183,7 +183,7 @@ int userial_vendor_open(tUSERIAL_CFG *p_cfg)
     uint16_t parity;
     uint8_t stop_bits;
 
-if (BT_WAKE_VIA_USERIAL_IOCTL==TRUE)
+#if (BT_WAKE_VIA_USERIAL_IOCTL==TRUE)
     int ldisc;
 #endif
 
